@@ -1,8 +1,8 @@
 <?php
 
 \TYPO3\CMS\Extbase\Utility\ExtensionUtility::registerPlugin(
-    'MyVendor.StoreInventory',
+    'ArbkomEKvW.Mediaconsent',
     'Pi1',
-    'The Store Inventory List',
-    'EXT:store_inventory/Resources/Public/Icons/Extension.svg'
+    'Consent Content Element',
+    'EXT:mediaconsent/Resources/Public/Icons/Extension.svg'
 );

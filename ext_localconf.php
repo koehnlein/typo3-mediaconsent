@@ -4,14 +4,14 @@ defined('TYPO3_MODE') || die('Access denied.');
 call_user_func(
     function () {
         \TYPO3\CMS\Extbase\Utility\ExtensionUtility::configurePlugin(
-            'MyVendor.StoreInventory',
+            'ArbkomEKvW.Mediaconsent',
             'Pi1',
             [
-                'StoreInventory' => 'list',
+                'Mediaconsent' => 'list',
             ],
             // non-cacheable actions
             [
-                'StoreInventory' => '',
+                'Mediaconsent' => 'list',
             ]
         );
     }
