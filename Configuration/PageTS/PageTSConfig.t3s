@@ -1,0 +1,13 @@
+mod.wizards.newContentElement.wizardItems.special {
+   elements {
+      mediaconsent_cns {
+         iconIdentifier = tx_mediaconsent_cns
+         title = LLL:EXT:mediaconsent/Resources/Private/Language/locallang.xlf:mediaconsent_cns.wizard.title
+         description = LLL:EXT:mediaconsent/Resources/Private/Language/locallang.xlf:mediaconsent_cns.wizard.description
+         tt_content_defValues {
+            CType = mediaconsent_cns
+         }
+      }
+   }
+   show := addToList(mediaconsent_cns)
+}

@@ -1,0 +1,12 @@
+lib.contentElement {
+   templateRootPaths {
+      200 = EXT:mediaconsent/Resources/Private/Templates/
+   }
+}
+
+tt_content {
+   mediaconsent_cns =< lib.contentElement
+   mediaconsent_cns {
+      templateName = Mediaconsent_cns.html
+   }
+}

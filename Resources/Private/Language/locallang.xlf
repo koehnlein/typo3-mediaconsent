@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.0">
+    <file source-language="en" datatype="plaintext" original="messages" date="2018-09-20T13:45:00Z"
+          product-name="mediaconsent">
+        <header/>
+        <body>
+            <trans-unit id="mediaconsent_cns.wizard.title">
+                <source>Medien Inhalt Opt-in</source>
+            </trans-unit>
+            <trans-unit id="mediaconsent_cns.wizard.description">
+                <source><![CDATA[Lädt Inhalt nur nach Zustimmung.]]></source>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>
