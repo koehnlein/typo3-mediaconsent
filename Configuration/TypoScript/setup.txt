@@ -1,12 +1,40 @@
+# Template path for mediaconsent content element
 lib.contentElement {
    templateRootPaths {
       200 = EXT:mediaconsent/Resources/Private/Templates/
    }
 }
 
+# Rendering Definition
 tt_content {
    mediaconsent_cns =< lib.contentElement
    mediaconsent_cns {
       templateName = Mediaconsent_cns.html
    }
+}
+
+# Special Page type for reloading content element
+rldPage = PAGE
+rldPage {
+    typeNum = 122
+
+    config {
+        disableAllHeaderCode = 1
+        debug = 0
+    }
+
+    10 = COA_INT
+    10 {
+        10 = CONTENT
+        10 {
+            table = tt_content
+            select {
+                uidInList.stdWrap.cObject = TEXT
+                uidInList.stdWrap.cObject {
+                    intval = 1
+                    data = GP:mediaconsent_item
+                }
+            }
+        }
+    }
 }
