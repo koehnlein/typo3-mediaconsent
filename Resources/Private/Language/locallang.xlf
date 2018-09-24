@@ -10,6 +10,27 @@
             <trans-unit id="mediaconsent_cns.wizard.description">
                 <source><![CDATA[Lädt Inhalt nur nach Zustimmung.]]></source>
             </trans-unit>
+            <trans-unit id="tt_content.mediaconsent_smcprovider">
+                <source>Content-Quelle</source>
+            </trans-unit>
+            <trans-unit id="tt_content.mediaconsent_smcprovider.I.0">
+                <source>Facebook</source>
+            </trans-unit>
+            <trans-unit id="tt_content.mediaconsent_smcprovider.I.1">
+                <source>Instagram</source>
+            </trans-unit>
+            <trans-unit id="tt_content.mediaconsent_smcprovider.I.2">
+                <source>Twitter</source>
+            </trans-unit>
+            <trans-unit id="tt_content.mediaconsent_smcprovider.I.3">
+                <source>Youtube</source>
+            </trans-unit>
+            <trans-unit id="tt_content.mediaconsent_smcprovider.I.4">
+                <source>Vimeo</source>
+            </trans-unit>
+            <trans-unit id="tt_content.mediaconsent_smcprovider.I.5">
+                <source>Soundcloud</source>
+            </trans-unit>
         </body>
     </file>
 </xliff>

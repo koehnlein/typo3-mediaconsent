@@ -10,13 +10,19 @@ tt_content {
    mediaconsent_cns =< lib.contentElement
    mediaconsent_cns {
       templateName = Mediaconsent_cns.html
+      dataProcessing {
+        1 = ArbkomEKvW\mediaconsent\DataProcessing\MediaconsentCnsProcessor
+        1 {
+          reloadPageType = {$pages.reloadPageType}
+        }
+      }
    }
 }
 
 # Special Page type for reloading content element
 rldPage = PAGE
 rldPage {
-    typeNum = 122
+    typeNum = {$pages.reloadPageType}
 
     config {
         disableAllHeaderCode = 1

@@ -10,13 +10,63 @@
    'mediaconsent'
 );
 
+// Configure additional field mediaconsent_smcprovider in tt_content
+$tempColumns = array (
+  'mediaconsent_smcprovider' => 
+  array (
+    'config' => 
+    array (
+      'type' => 'select',
+      'renderType' => 'selectSingle',
+      'items' => 
+      array (
+        0 => 
+        array (
+          0 => 'LLL:EXT:mediaconsent/Resources/Private/Language/locallang.xlf:tt_content.mediaconsent_smcprovider.I.0',
+          1 => '1',
+        ),
+        1 => 
+        array (
+          0 => 'LLL:EXT:mediaconsent/Resources/Private/Language/locallang.xlf:tt_content.mediaconsent_smcprovider.I.1',
+          1 => '2',
+        ),
+        2 => 
+        array (
+          0 => 'LLL:EXT:mediaconsent/Resources/Private/Language/locallang.xlf:tt_content.mediaconsent_smcprovider.I.2',
+          1 => '3',
+        ),
+        3 => 
+        array (
+          0 => 'LLL:EXT:mediaconsent/Resources/Private/Language/locallang.xlf:tt_content.mediaconsent_smcprovider.I.3',
+          1 => '4',
+        ),
+        4 => 
+        array (
+          0 => 'LLL:EXT:mediaconsent/Resources/Private/Language/locallang.xlf:tt_content.mediaconsent_smcprovider.I.4',
+          1 => '5',
+        ),
+        5 => 
+        array (
+          0 => 'LLL:EXT:mediaconsent/Resources/Private/Language/locallang.xlf:tt_content.mediaconsent_smcprovider.I.5',
+          1 => '6',
+        ),
+      ),
+    ),
+    'exclude' => '1',
+    'label' => 'LLL:EXT:mediaconsent/Resources/Private/Language/locallang.xlf:tt_content.mediaconsent_smcprovider',
+  ),
+);
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns('tt_content', $tempColumns);
+
+
 // Configure the default backend fields for the content element
 $GLOBALS['TCA']['tt_content']['types']['mediaconsent_cns'] = array(
    'showitem' => '
       --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:general,
          --palette--;;general,
          --palette--;;headers,
-         bodytext;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:bodytext_formlabel,
+         mediaconsent_smcprovider;LLL:EXT:mediaconsent/Resources/Private/Language/locallang.xlf:tt_content.mediaconsent_smcprovider,
+         bodytext;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:bodytext.ALT.html_formlabel,
       --div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.appearance,
          --palette--;;frames,
          --palette--;;appearanceLinks,
@@ -35,7 +85,9 @@ $GLOBALS['TCA']['tt_content']['types']['mediaconsent_cns'] = array(
       'bodytext' => [
          'config' => [
             'enableRichtext' => false,
-            'richtextConfiguration' => 'default'
+            'format' => 'html',
+            'renderType' => 't3editor',
+            'wrap' => 'off'
          ]
       ]
    ]
