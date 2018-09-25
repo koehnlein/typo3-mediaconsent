@@ -38,11 +38,31 @@ class MediaconsentCnsProcessor implements DataProcessorInterface
       array $contentObjectConfiguration,
       array $processorConfiguration,
       array $processedData
-   )
-   {
-      // cookieconsent_status = dismiss : Wert nach "OK"
-      $processedData['cookies'] = $_COOKIE;
-      $processedData['foo'] = $processorConfiguration;
+   ) {
+
+      // read allowed content sources from session
+      $allowedSources = $GLOBALS['TSFE']->fe_user->getKey('ses', 'allowFromSource');
+      if (! is_array($allowedSources) ) $allowedSources = [];
+
+      $smcProvider = $processedData['data']['mediaconsent_smcprovider'];
+
+      // do this only if a content element uid is arriving in mediaconsent_item:
+      // because this also means user has clicked to allow the content
+      if ( intval($_GET['mediaconsent_item']) > 0 ) { 
+        // check if content provider exists in session, save if not
+        if (! in_array($smcProvider, $allowedSources))  {
+          array_push($allowedSources, $smcProvider);
+          $GLOBALS['TSFE']->fe_user->setKey('ses', 'allowFromSource', $allowedSources);
+        }
+      }
+
+      if (in_array($smcProvider, $allowedSources)) {
+        $processedData['wrapperActive'] = 0;
+      } else {
+        $processedData['wrapperActive'] = 1;
+      }
+
       return $processedData;
    }
+   
 }

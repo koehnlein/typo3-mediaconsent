@@ -5,7 +5,7 @@ lib.contentElement {
    }
 }
 
-# Rendering Definition
+# Rendering Definition for mediaconsent content element
 tt_content {
    mediaconsent_cns =< lib.contentElement
    mediaconsent_cns {
@@ -13,7 +13,7 @@ tt_content {
       dataProcessing {
         1 = ArbkomEKvW\mediaconsent\DataProcessing\MediaconsentCnsProcessor
         1 {
-          reloadPageType = {$pages.reloadPageType}
+            reloadPageType = {$pages.reloadPageType}
         }
       }
    }

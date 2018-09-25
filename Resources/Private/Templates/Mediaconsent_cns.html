@@ -1,2 +1,17 @@
-<f:format.raw>{data.bodytext}</f:format.raw>
-<f:debug>{cookies}</f:debug>
+<f:if condition="{wrapperActive}">
+    <f:then>
+        <f:render section="showWrapper" />        
+    </f:then>
+    <f:else>
+        <f:render section="showElement" />
+    </f:else>
+</f:if>
+
+
+<f:section name="showWrapper">
+    <p>This is da Wrapper</p>
+</f:section>
+
+<f:section name="showElement">
+    <p>This is da Element!</p>
+</f:section>
