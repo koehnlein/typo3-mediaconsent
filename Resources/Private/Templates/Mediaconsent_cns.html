@@ -1,17 +1,17 @@
-<f:if condition="{wrapperActive}">
+<f:if condition="{wrapperActive} = 1">
     <f:then>
-        <f:render section="showWrapper" />        
+        <f:render section="showWrapper" arguments="{pageType: reloadPageType, data: data}" />
     </f:then>
     <f:else>
-        <f:render section="showElement" />
+        <f:render section="showElement"  arguments="{data: data}" />
     </f:else>
 </f:if>
 
 
 <f:section name="showWrapper">
-    <p>This is da Wrapper</p>
+    <p>Call page type {pageType} for element uid {data.uid}</p>
 </f:section>
 
 <f:section name="showElement">
-    <p>This is da Element!</p>
+    <f:format.raw>{data.bodytext}</f:format.raw>
 </f:section>

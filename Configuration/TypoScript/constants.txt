@@ -1,3 +1,6 @@
-pages {
+plugin.tx_mediaconsent.settings {
     reloadPageType = 122
+    loadJQuery = 0   
 }
+
+

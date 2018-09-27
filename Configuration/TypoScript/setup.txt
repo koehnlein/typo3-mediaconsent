@@ -1,4 +1,4 @@
-# Template path for mediaconsent content element
+# Fluid-Template path for mediaconsent content element
 lib.contentElement {
    templateRootPaths {
       200 = EXT:mediaconsent/Resources/Private/Templates/
@@ -13,19 +13,21 @@ tt_content {
       dataProcessing {
         1 = ArbkomEKvW\mediaconsent\DataProcessing\MediaconsentCnsProcessor
         1 {
-            reloadPageType = {$pages.reloadPageType}
+            reloadPageType = {$plugin.tx_mediaconsent.settings.reloadPageType}
         }
       }
    }
 }
 
+
 # Special Page type for reloading content element
 rldPage = PAGE
 rldPage {
-    typeNum = {$pages.reloadPageType}
+    typeNum = {$plugin.tx_mediaconsent.settings.reloadPageType}
 
     config {
         disableAllHeaderCode = 1
+        no_cache = 1
         debug = 0
     }
 
@@ -44,3 +46,8 @@ rldPage {
         }
     }
 }
+
+# Include jQuery. Assumes "page" as name for top level PAGE Object
+[globalVar = LIT:1 = {$plugin.tx_mediaconsent.settings.loadJQuery}]
+page.includeJSFooterlibs.jquery = EXT:mediaconsent/Resources/Public/js/jquery.min.js
+[end]

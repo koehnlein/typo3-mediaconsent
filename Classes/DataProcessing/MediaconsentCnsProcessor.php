@@ -62,6 +62,8 @@ class MediaconsentCnsProcessor implements DataProcessorInterface
         $processedData['wrapperActive'] = 1;
       }
 
+      $processedData['reloadPageType'] = $processorConfiguration['reloadPageType'];
+
       return $processedData;
    }
    
