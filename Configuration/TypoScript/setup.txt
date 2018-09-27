@@ -7,16 +7,19 @@ lib.contentElement {
 
 # Rendering Definition for mediaconsent content element
 tt_content {
-   mediaconsent_cns =< lib.contentElement
-   mediaconsent_cns {
-      templateName = Mediaconsent_cns.html
-      dataProcessing {
-        1 = ArbkomEKvW\mediaconsent\DataProcessing\MediaconsentCnsProcessor
-        1 {
-            reloadPageType = {$plugin.tx_mediaconsent.settings.reloadPageType}
-        }
+  # COA_INT makes element non-cached
+  mediaconsent_cns = COA_INT
+  mediaconsent_cns.10 =< lib.contentElement
+  mediaconsent_cns.10 {
+    templateName = Mediaconsent_cns.html
+    dataProcessing {
+      1 = ArbkomEKvW\mediaconsent\DataProcessing\MediaconsentCnsProcessor
+      1 {
+          reloadPageType = {$plugin.tx_mediaconsent.settings.reloadPageType}
+          cnProviders = Facebook,Instagram,Twitter,YouTube,Vimeo,SoundCloud
       }
-   }
+    }
+  }
 }
 
 
@@ -51,3 +54,7 @@ rldPage {
 [globalVar = LIT:1 = {$plugin.tx_mediaconsent.settings.loadJQuery}]
 page.includeJSFooterlibs.jquery = EXT:mediaconsent/Resources/Public/js/jquery.min.js
 [end]
+
+# Include JavaScript functions for reloading Content Element. 
+# Assumes "page" as name for top level PAGE Object
+page.includeJSFooter.tx_mediaconsent = EXT:mediaconsent/Resources/Public/js/tx_mediaconsent.js
