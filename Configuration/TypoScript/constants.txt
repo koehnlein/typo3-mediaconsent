@@ -1,6 +1,9 @@
 plugin.tx_mediaconsent.settings {
+
+    # cat=plugin.tx_mediaconsent/cText/1; type=; label= Include jQuery, set to 0 if it's already included.
+    loadJQuery = 1   
+
+    # cat=plugin.tx_mediaconsent/cText/1; type=; label= Page type for content reloading, change it if necessary
     reloadPageType = 122
-    loadJQuery = 0   
+
 }
-
-

@@ -1,17 +1,18 @@
-<f:if condition="{wrapperActive} = 1">
-    <f:then>
-        <f:render section="showWrapper" arguments="{pageType: reloadPageType, smcProvider: smcProvider, data: data}" />
-    </f:then>
-    <f:else>
-        <f:render section="showElement"  arguments="{data: data}" />
-    </f:else>
-</f:if>
-
+<div class="mediaconsent_element">
+    <f:if condition="{wrapperActive} = 1">
+        <f:then>
+            <f:render section="showWrapper" arguments="{pageType: reloadPageType, smcProvider: smcProvider, data: data}" />
+        </f:then>
+        <f:else>
+            <f:render section="showElement"  arguments="{data: data}" />
+        </f:else>
+    </f:if>
+</div>
 
 <f:section name="showWrapper">
-    <div class="mediaconsent_wrapper" data-mcid="{data.uid}-{pageType}">
+    <div class="mediaconsent_wrapper" data-mcuri="{f:uri.page(pageType: pageType, additionalParams: {mediaconsent_item: data.uid}, noCacheHash: 1)}">
         <input type="checkbox" name="mcb{smcProvider}">
-        Ich bin damit einverstanden, dass mir Inhalte von {smcProvider} angezeigt werden.
+        <f:translate key="LLL:EXT:mediaconsent/Resources/Private/Language/locallang.xlf:fluidtemplate.consentmessage" arguments="{0: smcProvider}" />
     </div>
 </f:section>
 

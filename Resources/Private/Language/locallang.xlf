@@ -31,6 +31,9 @@
             <trans-unit id="tt_content.mediaconsent_smcprovider.I.5">
                 <source>Soundcloud</source>
             </trans-unit>
+            <trans-unit id="fluidtemplate.consentmessage">
+                <source>Ich bin damit einverstanden, dass mir Inhalte von %s angezeigt werden.</source>
+            </trans-unit>
         </body>
     </file>
 </xliff>

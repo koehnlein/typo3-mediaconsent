@@ -1,6 +1,11 @@
 $(function() {
-    $('.mediaconsent_wrapper').click(function(event) {
-        console.log($(this).attr('data-mcid'));
+    $('.mediaconsent_wrapper').on('click', function(event) {
+        var reloadUrl = $(this).attr('data-mcuri');
+        var wrapper = $(this);
+        $.get(reloadUrl, function(data) {
+            wrapper.off('click');
+            wrapper.html(data);
+        }, 'html');
     });
 });
 
