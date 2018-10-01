@@ -1,0 +1,40 @@
+{
+    "name": "arbkomekvw/mediaconsent",
+    "type": "typo3-cms-extension",
+    "description": "Extension loads content only if the user agrees.",
+    "homepage": "https://github.com/abkekvw/mediaconsent",
+    "keywords": [
+        "TYPO3 CMS",
+        "ekvw",
+        "DSGVO",
+        "GDPR",
+        "front-end"
+    ],
+    "license": ["GPL-2.0+"],
+    "authors": [
+        {
+            "name": "Christoph Roth",
+            "email": "christoph.roth@lka.ekvw.de",
+            "role": "Developer",
+            "homepage": "http://www.ekvw.de/kommunikation/"
+        }
+    ],
+    "require": {
+        "php": "5.6 - 7.1",
+        "typo3/cms-core": "^8.7.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "ArbkomEKvW\\mediaconsent\\": "Classes/"
+        }
+    },
+    "replace": {
+        "mediaconsent": "self.version",
+        "typo3-ter/mediaconsent": "self.version"
+    },
+    "extra": {
+        "typo3/cms": {
+            "extension-key": "mediaconsent"
+        }
+    }
+}

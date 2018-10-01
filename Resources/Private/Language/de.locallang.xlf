@@ -6,39 +6,51 @@
         <body>
             <trans-unit id="mediaconsent_cns.wizard.title">
                 <source>Media Content Opt-In</source>
+                <target>Medien Inhalt Opt-in</target>
             </trans-unit>
             <trans-unit id="mediaconsent_cns.wizard.description">
                 <source><![CDATA[Loads content only if user agrees]]></source>
+                <target><![CDATA[Lädt Inhalt nur nach Zustimmung.]]></target>
             </trans-unit>
             <trans-unit id="tt_content.mediaconsent_smcprovider">
                 <source>Content Source</source>
+                <target>Content-Quelle</target>
             </trans-unit>
             <trans-unit id="tt_content.mediaconsent_smcprovider.I.0">
                 <source>Facebook</source>
+                <target>Facebook</target>
             </trans-unit>
             <trans-unit id="tt_content.mediaconsent_smcprovider.I.1">
                 <source>Instagram</source>
+                <target>Instagram</target>
             </trans-unit>
             <trans-unit id="tt_content.mediaconsent_smcprovider.I.2">
                 <source>Twitter</source>
+                <target>Twitter</target>
             </trans-unit>
             <trans-unit id="tt_content.mediaconsent_smcprovider.I.3">
                 <source>YouTube</source>
+                <target>YouTube</target>
             </trans-unit>
             <trans-unit id="tt_content.mediaconsent_smcprovider.I.4">
                 <source>Vimeo</source>
+                <target>Vimeo</target>
             </trans-unit>
             <trans-unit id="tt_content.mediaconsent_smcprovider.I.5">
                 <source>SoundCloud</source>
+                <target>SoundCloud</target>
             </trans-unit>
             <trans-unit id="fluidtemplate.consentmessage">
                 <source>Show content from %s</source>
+                <target>Ich bin damit einverstanden, dass mir Inhalte von %s angezeigt werden.</target>
             </trans-unit>
             <trans-unit id="constants.includejquery">
                 <source>Include jQuery if not already present</source>
+                <target>jQuery einbinden, falls nicht vorhanden.</target>
             </trans-unit>
             <trans-unit id="constants.reloadPageType">
                 <source>Page Type for reloading content elements</source>
+                <target>Page Type zum Nachladen von Contentelementen.</target>
             </trans-unit>
         </body>
     </file>
