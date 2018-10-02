@@ -31,8 +31,14 @@
             <trans-unit id="tt_content.mediaconsent_smcprovider.I.5">
                 <source>SoundCloud</source>
             </trans-unit>
+            <trans-unit id="tt_content.mediaconsent_smcprovider.I.6">
+                <source>Other...</source>
+            </trans-unit>
             <trans-unit id="fluidtemplate.consentmessage">
                 <source>Show content from %s</source>
+            </trans-unit>
+            <trans-unit id="fluidtemplate.consentmessage.others">
+                <source>Show content from third party provider.</source>
             </trans-unit>
             <trans-unit id="constants.includejquery">
                 <source>Include jQuery if not already present</source>

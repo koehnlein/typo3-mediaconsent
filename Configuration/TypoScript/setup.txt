@@ -16,7 +16,7 @@ tt_content {
       1 = ArbkomEKvW\mediaconsent\DataProcessing\MediaconsentCnsProcessor
       1 {
           reloadPageType = {$plugin.tx_mediaconsent.settings.reloadPageType}
-          cnProviders = Facebook,Instagram,Twitter,YouTube,Vimeo,SoundCloud
+          cnProviders = Facebook,Instagram,Twitter,YouTube,Vimeo,SoundCloud,Other
       }
     }
   }

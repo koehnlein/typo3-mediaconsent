@@ -6,72 +6,43 @@
 Administrator Manual
 ====================
 
-Target group: **Administrators**
-
-Describes how to manage the extension from an administrator point of view.
-That relates to Page/User TSconfig, permissions, configuration etc.,
-which administrator level users have access to.
-
-Language should be non / semi-technical, explaining, using small examples.
-
-
 .. _admin-installation:
 
 Installation
 ------------
 
-- How should the extension be installed?
-- Are they dependencies to resolve?
-- Is it a static template file to be included?
-
 To install the extension, perform the following steps:
 
-#. Go to the Extension Manager
-#. Install the extension
-#. Load the static template
-#. ...
+- Go to the Extension Manager
+- Install the extension
+- Select the static template
 
-For a list of configuration options, using a definition list is recommended:
+.. figure:: ../Images/static_template.png
+   :alt: Select static template
 
-Some Configuration
-  This option enables...
+   After install, select the static template
 
-Other configuration
-  This other option is for all the rest...
+.. important::
 
+   This extensions adds a little JavaScript to the webpage and needs the jQuery library. Therefore it assumes that the top-level TypoScript object of type PAGE is named "page" as it is generally recommended.
 
-.. figure:: ../Images/AdministratorManual/ExtensionManager.png
-   :alt: Extension Manager
+If this is not the case, you have to configure manually the path to the jQuery library and to the extension's JavaScript file which are::
 
-   Extension Manager (caption of the image)
+    EXT:mediaconsent/Resources/Public/js/jquery.min.js
+    EXT:mediaconsent/Resources/Public/js/tx_mediaconsent.js
 
-   List of extensions within the Extension Manager also shorten with "EM" (legend of the image)
+You may lookup setup.txt for the example configuration using "page".
 
+For the jQuery library: If your website already makes use of it, you can disable the extension's own file by setting a constant, see below.
 
-.. _admin-configuration:
+Editing Constants
+^^^^^^^^^^^^^^^^^
 
-Configuration
--------------
+.. figure:: ../Images/editing_constants.png
+   :alt: Constants for jQuery and more
 
-* Where and how the extension should be configured? TypoScript? PHP?
+   Constants for jQuery and the reload page type
 
-* Are there other prerequisite to full fill beforehand?
-  For example, configure a setting in a special way somewhere.
+To disable the include of this extension's own jQuery file, you may use the constant editor and set the "loadJQuery" constant to 0. This is for the case that you are having jQuery in your setup and don't need it included twice.
 
-
-.. _admin-faq:
-
-FAQ
----
-
-Possible subsection: FAQ
-
-Subsection
-^^^^^^^^^^
-
-Some subsection
-
-Sub-subsection
-""""""""""""""
-
-Deeper into the structure...
+Another constant (reloadPageType) deals with the very rare case that you already use a pagetype of 122 somewhere in your typoscript configuration. Then you can change it here.

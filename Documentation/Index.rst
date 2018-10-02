@@ -10,7 +10,7 @@ Extension Name
 .. only:: html
 
 	:Classification:
-		<extension key>
+		<mediaconsent>
 
 	:Version:
 		|release|
@@ -19,19 +19,19 @@ Extension Name
 		en
 
 	:Description:
-		Manual covering TYPO3 extension <extension name>
+		Manual covering TYPO3 extension mediaconsent
 
 	:Keywords:
-		comma,separated,list,of,keywords
+		SocialMedia,GDPR,DSGVO
 
 	:Copyright:
-		2013-2015
+		2018-
 
 	:Author:
-		Your name
+		Christoph Roth
 
 	:Email:
-		you@domain.tld
+		christoph.roth@lka.ekvw.de
 
 	:License:
 		This document is published under the Open Publication License
@@ -53,8 +53,6 @@ Extension Name
 	Introduction/Index
 	User/Index
 	Administrator/Index
-	Configuration/Index
-	Developer/Index
 	KnownProblems/Index
 	ToDoList/Index
 	ChangeLog/Index

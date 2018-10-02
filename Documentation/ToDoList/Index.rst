@@ -6,6 +6,6 @@
 To-Do list
 ==========
 
-Give a link pointing to a `roadmap <http://forge.typo3.org/projects/typo3cms-doc-official-extension-template/roadmap>`_.
-Alternatively, you can dress up a list of things you want to add or fix in this chapter
-or give a vision about where the extension is heading.
+This extension was made out of the need for a "consent wrapper" for social media HTML snippets taken directly from the social media providers. Although this happens often, you may have built or imported your own content elements which contain or process social media content inside. Then this extension doesn't help you. 
+
+So there is a toDo: Set up an extension (mediaconsent2) for wrapping arbitrary content elements, not only raw HTML... :-)

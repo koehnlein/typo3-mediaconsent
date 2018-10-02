@@ -50,6 +50,11 @@ $tempColumns = array (
           0 => 'LLL:EXT:mediaconsent/Resources/Private/Language/locallang.xlf:tt_content.mediaconsent_smcprovider.I.5',
           1 => '6',
         ),
+        6 =>
+        array(
+          0 => 'LLL:EXT:mediaconsent/Resources/Private/Language/locallang.xlf:tt_content.mediaconsent_smcprovider.I.6',
+          1 => '7',
+        ),
       ),
     ),
     'exclude' => '1',

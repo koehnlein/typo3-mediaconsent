@@ -12,16 +12,11 @@ Introduction
 What does it do?
 ----------------
 
-This chapter should give a brief overview of the extension. What does it do? What problems does it solve?
-Who is interested in this? Basically, this section includes everything people need to know to decide whether they
-should go on with this extension or not.
+This extension loads HTML content only after the user has clicked on a short note expressing his/her agreement to see it.
 
-.. important::
+It is useful for embedding HTML snippets (often called widgets) from social media content providers like Facebook, Twitter and others. If the user does not agree, no widget is shown and no personal data (IP number etc.) is transferred to the social media provider.
 
-   Please don't forget to repeat your extension's version number in the
-   :file:`Settings.yml` file, in the :code:`release` property. It will be
-   automatically picked up on the cover page by the :code:`|release|`
-   substitution.
+The extension provides a new content element called "Media Consent Opt-In" which has two specific fields: one for the HTML snippet embedding the content, another for selecting the content provider (Facebook, Twitter...)
 
 
 .. _screenshots:
@@ -29,13 +24,21 @@ should go on with this extension or not.
 Screenshots
 -----------
 
-This chapter should help people figure how the extension works. Remove it
-if not relevant.
-
-.. figure:: ../Images/IntroductionPackage.png
+.. figure:: ../Images/new_element.png
    :width: 500px
-   :alt: Introduction Package
+   :alt: Media Consent Opt-In
 
-   Introduction Package just after installation (caption of the image)
+   Extension provides new content element "Media Consent Opt-In"
 
-   How the Frontend of the Introduction Package looks like just after installation (legend of the image)
+.. figure:: ../Images/element_in_frontend.png
+   :width: 500px
+   :alt: Element in Frontend view
+
+   Extension provides new content element "Media Consent Opt-In"
+
+.. figure:: ../Images/content_activated.png
+   :width: 500px
+   :alt: Twitter content activated
+
+   After clicking to agree, content is being loaded and displayed
+
