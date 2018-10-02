@@ -34,7 +34,7 @@ Screenshots
    :width: 500px
    :alt: Element in Frontend view
 
-   Extension provides new content element "Media Consent Opt-In"
+   Frontend view: User has to confirm display of content
 
 .. figure:: ../Images/content_activated.png
    :width: 500px
