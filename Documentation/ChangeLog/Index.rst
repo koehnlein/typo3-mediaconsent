@@ -6,5 +6,8 @@
 ChangeLog
 =========
 
+Version 0.1.1
+    Added content in README.md
+
 Version 0.1.0
     First release
