@@ -6,6 +6,9 @@
 ChangeLog
 =========
 
+Version 0.1.2
+    Bugfix in composer.json
+
 Version 0.1.1
     Added content in README.md
 
