@@ -1,3 +1,8 @@
+.. ==================================================
+.. FOR YOUR INFORMATION
+.. --------------------------------------------------
+.. -*- coding: utf-8 -*- with BOM.
+
 .. include:: Includes.txt
 
 
@@ -10,7 +15,7 @@ Extension Name
 .. only:: html
 
 	:Classification:
-		<mediaconsent>
+		mediaconsent
 
 	:Version:
 		|release|

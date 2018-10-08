@@ -1,3 +1,8 @@
+.. ==================================================
+.. FOR YOUR INFORMATION
+.. --------------------------------------------------
+.. -*- coding: utf-8 -*- with BOM.
+
 .. include:: ../Includes.txt
 
 
@@ -5,6 +10,9 @@
 
 ChangeLog
 =========
+
+Version 0.1.3
+    Bugfix release
 
 Version 0.1.2
     Bugfix in composer.json
