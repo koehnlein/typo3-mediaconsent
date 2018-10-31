@@ -9,15 +9,10 @@ $EM_CONF[$_EXTKEY] = [
     'author_email' => 'christoph.roth@lka.ekvw.de',
     'state' => 'beta',
     'clearCacheOnLoad' => true,
-    'version' => '0.1.3',
+    'version' => '0.1.4',
     'constraints' => [
         'depends' => [
             'typo3' => '8.7.0-8.7.99',
         ]
-    ],
-    'autoload' => [
-        'psr-4' => [
-            'ArbkomEKvW\\mediaconsent\\' => 'Classes'
-        ]
-    ],
+    ]
 ];
