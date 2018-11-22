@@ -10,7 +10,7 @@
 </div>
 
 <f:section name="showWrapper">
-    <div class="mediaconsent_wrapper" data-mcuri="{f:uri.page(pageType: pageType, additionalParams: {mediaconsent_item: data.uid}, noCacheHash: 1)}">
+    <div class="mediaconsent_wrapper" data-mcuri="{f:uri.page(pageType: pageType, additionalParams: {mediaconsent_item: data.uid}, noCacheHash: 1)}" data-mctype="{data.mediaconsent_smcprovider}">
         <input type="checkbox" name="mcb{smcProvider}">
         <f:if condition="{data.mediaconsent_smcprovider} != 7">
             <f:then>
