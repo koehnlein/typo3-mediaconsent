@@ -1,3 +1,5 @@
+<html xmlns:mcse="http://ekvw.de/mcse">
+
 <div class="mediaconsent_element">
     <f:if condition="{wrapperActive} = 1">
         <f:then>
@@ -11,6 +13,7 @@
 
 <f:section name="showWrapper">
     <div class="mediaconsent_wrapper" data-mcuri="{f:uri.page(pageType: pageType, additionalParams: {mediaconsent_item: data.uid}, noCacheHash: 1)}" data-mctype="{data.mediaconsent_smcprovider}">
+        <f:render partial="Header" arguments="{data: data}" />
         <input type="checkbox" name="mcb{smcProvider}">
         <f:if condition="{data.mediaconsent_smcprovider} != 7">
             <f:then>
@@ -24,5 +27,6 @@
 </f:section>
 
 <f:section name="showElement">
+    <f:render partial="Header" arguments="{data: data}" />
     <f:format.raw>{data.bodytext}</f:format.raw>
 </f:section>

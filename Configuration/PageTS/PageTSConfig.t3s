@@ -11,3 +11,9 @@ mod.wizards.newContentElement.wizardItems.special {
    }
    show := addToList(mediaconsent_cns)
 }
+
+TCEFORM.tt_content {
+   subheader.types.mediaconsent_cns.disabled = 1
+   date.types.mediaconsent_cns.disabled = 1
+   header_position.types.mediaconsent_cns.disabled = 1
+}

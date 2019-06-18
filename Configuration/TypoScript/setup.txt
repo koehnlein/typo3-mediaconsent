@@ -1,16 +1,20 @@
-# Fluid-Template path for mediaconsent content element
-lib.contentElement {
-   templateRootPaths {
-      200 = EXT:mediaconsent/Resources/Private/Templates/
-   }
-}
-
 # Rendering Definition for mediaconsent content element
 tt_content {
   # COA_INT makes element non-cached
   mediaconsent_cns = COA_INT
-  mediaconsent_cns.10 =< lib.contentElement
+  mediaconsent_cns.10 = FLUIDTEMPLATE
   mediaconsent_cns.10 {
+
+    layoutRootPaths {
+      10 = EXT:mediaconsent/Resources/Private/Layouts
+    } 
+    partialRootPaths {
+      10 = EXT:mediaconsent/Resources/Private/Partials
+    }
+    templateRootPaths {
+      10 = EXT:mediaconsent/Resources/Private/Templates
+    }
+
     templateName = Mediaconsent_cns.html
     dataProcessing {
       1 = ArbkomEKvW\mediaconsent\DataProcessing\MediaconsentCnsProcessor
