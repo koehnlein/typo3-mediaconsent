@@ -12,7 +12,7 @@ Mediaconsent Extension
 
 
 :Version:
-   |release|
+   0.1.7
 
 :Language:
    en
