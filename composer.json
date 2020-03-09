@@ -10,7 +10,7 @@
         "GDPR",
         "front-end"
     ],
-    "license": ["GPL-2.0+"],
+    "license": ["GPL-2.0-or-later"],
     "authors": [
         {
             "name": "Christoph Roth",
@@ -29,7 +29,7 @@
         }
     },
     "replace": {
-        "mediaconsent": "self.version",
+        "arbkomekvw/mediaconsent": "self.version",
         "typo3-ter/mediaconsent": "self.version"
     },
     "extra": {
