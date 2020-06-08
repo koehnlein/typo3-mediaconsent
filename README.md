@@ -9,3 +9,13 @@ It is useful for embedding HTML snippets (often called widgets) from social medi
 
 The extension provides a new content element called "Media Consent Opt-In" which has two specific fields: one for the HTML snippet embedding the content, another for selecting the content provider (Facebook, Twitter...)
 
+## Routing
+
+To make the extension work with TYPO3's new routing, you should add a page type suffix for the reload page type, similar to this example:
+
+```
+routeEnhancers:
+  PageTypeSuffix:
+    map:
+      mediaconsent.html: 122
+```
