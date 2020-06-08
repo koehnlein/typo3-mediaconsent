@@ -55,7 +55,7 @@ rldPage {
 }
 
 # Include jQuery. Assumes "page" as name for top level PAGE Object
-[globalVar = LIT:1 = {$plugin.tx_mediaconsent.settings.loadJQuery}]
+[{$plugin.tx_mediaconsent.settings.loadJQuery} == 1]
 page.includeJSFooterlibs.jquery = EXT:mediaconsent/Resources/Public/js/jquery.min.js
 [end]
 
